@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    id="WebApp_ID" version="2.5">
+ 
+         <display-name>Restlet adapters</display-name>
+ 
+         <servlet>
+                 <servlet-name>Restlet1</servlet-name>
+                 <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+                 <init-param>
+                         <param-name>org.restlet.application</param-name>
+                         <param-value>ghi.GHIApplication</param-value>
+                 </init-param>
+         </servlet>
+ 
+         <servlet-mapping>
+                 <servlet-name>Restlet1</servlet-name>
+                 <url-pattern>/ghi/*</url-pattern>
+         </servlet-mapping>
+ 
+         <servlet>
+                 <servlet-name>Restlet2</servlet-name>
+                 <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+                 <init-param>
+                         <param-name>org.restlet.application</param-name>
+                         <param-value>arabspatial.ArabSpatialApplication</param-value>
+                 </init-param>
+         </servlet>
+ 
+         <servlet-mapping>
+                 <servlet-name>Restlet2</servlet-name>
+                 <url-pattern>/arabspatial/*</url-pattern>
+         </servlet-mapping>
+
+         <servlet>
+                 <servlet-name>Restlet3</servlet-name>
+                 <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+                 <init-param>
+                         <param-name>org.restlet.application</param-name>
+                         <param-value>speed.SpeedApplication</param-value>
+                 </init-param>
+         </servlet>
+ 
+         <servlet-mapping>
+                 <servlet-name>Restlet3</servlet-name>
+                 <url-pattern>/indicator/*</url-pattern>
+         </servlet-mapping>
+
+
+         <servlet>
+                 <servlet-name>Restlet4</servlet-name>
+                 <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+                 <init-param>
+                         <param-name>org.restlet.application</param-name>
+                         <param-value>asti.ASTIApplication</param-value>
+                 </init-param>
+         </servlet>
+ 
+         <servlet-mapping>
+                 <servlet-name>Restlet4</servlet-name>
+                 <url-pattern>/asti/*</url-pattern>
+         </servlet-mapping>
+ 
+         <servlet>
+                 <servlet-name>Restlet5</servlet-name>
+                 <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+                 <init-param>
+                         <param-name>org.restlet.application</param-name>
+                         <param-value>at.ATApplication</param-value>
+                 </init-param>
+         </servlet>
+ 
+         <servlet-mapping>
+                 <servlet-name>Restlet5</servlet-name>
+                 <url-pattern>/at/*</url-pattern>
+         </servlet-mapping>
+
+<!-- speed.owl is 188MB so this is impraciticably slow
+         <servlet>
+                 <servlet-name>Restlet6</servlet-name>
+                 <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+                 <init-param>
+                         <param-name>org.restlet.application</param-name>
+                         <param-value>speed.SpeedApplication</param-value>
+                 </init-param>
+         </servlet>
+ 
+
+         <servlet-mapping>
+                 <servlet-name>Restlet6</servlet-name>
+                 <url-pattern>/speed/*</url-pattern>
+         </servlet-mapping>
+-->
+
+
+ </web-app>
