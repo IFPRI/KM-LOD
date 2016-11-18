@@ -77,7 +77,22 @@
                  <url-pattern>/at/*</url-pattern>
          </servlet-mapping>
 
+<!-- speed.owl is 188MB so this is impraciticably slow
+         <servlet>
+                 <servlet-name>Restlet6</servlet-name>
+                 <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+                 <init-param>
+                         <param-name>org.restlet.application</param-name>
+                         <param-value>speed.SpeedApplication</param-value>
+                 </init-param>
+         </servlet>
+ 
 
+         <servlet-mapping>
+                 <servlet-name>Restlet6</servlet-name>
+                 <url-pattern>/speed/*</url-pattern>
+         </servlet-mapping>
+-->
 
 
  </web-app>
